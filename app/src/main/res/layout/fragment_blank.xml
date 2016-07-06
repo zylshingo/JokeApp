@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+              android:orientation="vertical"
+             android:layout_height="match_parent"
+             tools:context=".fragment.JokeFragment">
+    <TextView
+            android:layout_width="match_parent"
+            android:background="?attr/colorPrimary"
+            android:text="@string/xiaohua"
+            android:id="@+id/tv_actionBar"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_height="?attr/actionBarSize"/>
+
+    <com.jikexueyuan.joke.jokeapp.view.RefreshableView
+            android:id="@+id/refreshable_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </ListView>
+
+    </com.jikexueyuan.joke.jokeapp.view.RefreshableView>
+
+</LinearLayout>
